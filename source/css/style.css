@@ -1327,6 +1327,8 @@ section{
 /* Services Tabs start */
 /* Services Tabs start */
 /* Sidebar menu none */
+/* Desktop */
+/* Sidebar menu */
 .main-container {
   width: 100%;
   height: auto;
@@ -1398,7 +1400,7 @@ section{
 
 #informacion-servicio {
   width: 100%;
-  height: auto;
+  height: 100%;
   overflow: auto;
   display: flex;
   align-items: center;
@@ -1413,55 +1415,119 @@ section{
   border-radius: 5px;
 }
 
-/* Consultas de medios */
-@media (max-width: 769px) {
+@media (min-width: 768px) and (max-width: 1920px) {
+  #sidebar {
+    width: 450px;
+  }
   .main-container {
     padding: 5rem;
-    height: auto;
+    height: 104vh;
   }
-  #sidebar {
+  #informacion-servicio {
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebar li a {
+    font-size: 15px;
+  }
+  .main-container {
+    height: 120vh;
+  }
+}
+/* Ipads grandes */
+/* @media (min-width: 769px) and (max-width: 1023px){
+  .main-container {
+    padding: 5rem 10rem 5rem 5rem;
+    height: 175vh !important;
+    margin-right: 100px;
+  }
+} */
+@media (min-width: 769px) and (max-width: 869px){
+  .main-container {
+    padding: 5rem 5rem 5rem 5rem;
+    height: 110vh !important;
+  }
+  #sidebar{
     margin-left: 0px;
   }
-  #iframe-servicio {
+  #iframe-servicio{
+    margin-right: 0px !important;
+  }
+}
+@media (min-width: 869px) and (max-width: 992px){
+  .main-container {
+    padding: 5rem 5rem 5rem 5rem;
+    height: 110vh !important;
+  }
+  #sidebar{
+    margin-left: 0px;
+  }
+  #iframe-servicio{
+    margin-right: 0px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1023px){
+  .main-container {
+    padding: 5rem 5rem 5rem 5rem;
+    height: 110vh !important;
+    margin-right: 100px;
+  }
+  #sidebar{
+    margin-left: 0px;
+  }
+  #iframe-servicio{
     margin-right: 0px !important;
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
-  .main-container {
-    padding: 5rem;
-    height: auto;
-  }
-}
-
-@media (min-width: 993px) and (max-width: 1440px) {
+/* Pantallas Mac 1440 */
+/* @media (min-width: 1024px) and (max-width: 1450px) {
   .main-container {
     padding: 5rem 10rem 5rem 5rem;
-    height: auto;
+    min-height: 155vh !important;
+    margin-right: 100px;
+  }
+} */
+@media (max-width: 1440px){
+  .main-container {
+    padding: 5rem 10rem 5rem 5rem;
+    height: 156vh ;
     margin-right: 100px;
   }
 }
-
-@media (min-width: 1441px) and (max-width: 1650px) {
+@media (min-width: 1451px) and (max-width: 1650px) {
   .main-container {
     padding: 5rem 10rem 5rem 5rem;
-    height: auto;
+    height: 155vh !important;
     margin-right: 100px;
   }
 }
-
 @media (min-width: 1651px) and (max-width: 1909px) {
   .main-container {
     padding: 5rem 10rem 5rem 5rem;
-    height: auto;
+    height: 110vh !important;
     margin-right: 100px;
   }
 }
 
+
+
+
+/* Pantallas 1920 */
+@media (min-width: 1900px) {
+  .main-container {
+    padding: 5rem;
+    height: 102vh;
+  }
+}
+
+/* Otras pantallas específicas */
 @media (min-width: 1910px) and (max-width: 1920px) {
   .main-container {
     margin-left: 200px;
-    height: auto;
+    height: 108vh !important;
     margin-right: 200px;
   }
   #informacion-servicio {
@@ -1471,15 +1537,6 @@ section{
     margin-left: 8%;
   }
 }
-
-/* Pantallas 1920 y superiores */
-@media (min-width: 1900px) {
-  .main-container {
-    padding: 5rem;
-    height: auto;
-  }
-}
-
 
 
 /* @media (max-width: 968px) {
@@ -1513,14 +1570,6 @@ section{
       border-radius: 5px;
       border: none;
       display: block;
-    }
-    #informacion-servicio {
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     .desktop-menu {
       position: relative;
@@ -2724,16 +2773,29 @@ section{
   background-color: #fff;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de flexión a columna */
 }
+.feature-item .btn-main {
+  width: 60%;
+}
+
 .feature-item .feature-icon i {
   font-size: 50px;
   color: #223a66;
 }
+
 .feature-item h4 {
   color: #223a66;
 }
+
 .feature-item p {
   font-size: 14px;
+  flex-grow: 1; /* Hace que el texto crezca para llenar el espacio disponible */
+}
+
+.feature-item .btn {
+  margin-top: auto; /* Desplaza el botón hacia la parte inferior */
 }
 
 .feature-section.border-top {
@@ -2784,16 +2846,16 @@ section{
   border-color: #223a66;
 }
 .btn-main:hover {
-  background: #e12454;
-  border-color: #e12454;
+  background: #FC6701;
+  border-color: #FC6701;
   color: #fff;
 }
-
 .sec-scale-card{
   transition: transform 0.5s ease;
   cursor: pointer;
 }
+
 .sec-scale-card:hover {
   transform: scale(1.05);
 }
-/* Social Media Home END*/
+/* Social Media Home END */
