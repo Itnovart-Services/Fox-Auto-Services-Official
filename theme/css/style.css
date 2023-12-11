@@ -17,6 +17,10 @@
 html {
   scroll-behavior: smooth;
 }
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 container{
   max-width: 390px;
 }
@@ -325,12 +329,13 @@ section{
 .fab-container{
     position: fixed;
     bottom: 3rem;
-    right: 2.5rem !important;
+    right: 2rem;
     z-index: 9999;
     cursor: pointer;
+    max-width: 100%;
 }
 .faq-2{
-  bottom: 12rem !important;
+  bottom: 10.5rem !important;
 }
 
 .fab-icon-holder{
@@ -653,190 +658,158 @@ section{
 
 /* Hero style for services */
 /* Estilos generales para el hero section */
-.hero-section-services {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.395) 0%, rgba(35, 57, 82, 0.479) 100%) ,url('../images/coverServices.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
-  }
+.hero-section {
+  font-family: 'Aldrich', sans-serif;
+  background-size: cover;
+  background-position: 50% 50%;
+  color: #fff;
+  height: 50vh;
+  text-align: center;
+  padding: 60px 0; /* Espaciado superior e inferior para pantallas móviles */
+  margin-top: 30px;
+}
+.hero-title,
+.section-title,
+.insta-h1 {
+  color: #FC6701;
+  font-size: 3rem;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.hero-description,
+.insta-h3,
+.award-item p {
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.section-erc-list-item,
+.section-insta-info p,
+.award-item p {
+  font-size: 1.6rem;
+  letter-spacing: 1.2px;
+  color: #333;
+  margin-top: 10px;
+}
+
 .hero-section-gallery {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/gallery/gallery-section.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
-  }
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/gallery/gallery-section.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 .hero-section-AboutUs {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/realImages/HowWeDoIt.png'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 100%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
-  }
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/realImages/HowWeDoIt.png');
+  background-position: 50% 100%;
+  background-size: cover;
+}
+
 .hero-section-collision {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.518) 0%, rgba(35, 57, 82, 0.659) 100%) ,url('../images/collisionRepairHero.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 70%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
-  }
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.518) 0%, rgba(35, 57, 82, 0.659) 100%), url('../images/collisionRepairHero.jpg');
+  background-position: 50% 70%;
+  background-size: cover;
+}
+
 .hero-section-estimate {
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/RequestAnEstimate.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 90%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/RequestAnEstimate.jpg');
+  background-position: 50% 90%;
+  background-size: cover;
+}
+
+.hero-section-how-we-do-it {
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/realImages/fondoShop.jpg');
+  background-size: cover;
+  background-position: 50% 70%;
+}
+.hero-section-services {
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/coverServices.jpg');
+  background-position: 50% 90%;
+  background-size: cover;
+}
+
+.hero-title {
+  color: #FC6701;
+}
+
+/* Estilos comunes para tamaños de pantalla de escritorio */
+@media (min-width: 1024px) {
+  .hero-section {
+    height: auto;
+    padding: 90px 0;
   }
-  .hero-section-how-we-do-it{
-    font-family: 'Aldrich', sans-serif;
-    background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.488) 0%, rgba(35, 57, 82, 0.507) 100%) ,url('../images/realImages/fondoShop.jpg'); /* Reemplaza con tu imagen de héroe */
-    background-size: cover;
-    background-position: 50% 50%;
-    color: #fff;
-    height: 47vh;
-    text-align: center;
+  .hero-title {
+    font-size: 50px;
+    margin-bottom: 20px;
   }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 0; /* Espaciado superior e inferior para pantallas móviles */
-    margin-top: 30px;
+  .hero-description {
+    font-size: 18px;
+    margin-bottom: 100px;
+    margin: 0 2rem 0;
+  }
+}
+
+/* Estilos comunes para tamaños de pantalla grandes */
+@media (min-width: 1500px) {
+  .hero-section {
+    height: auto;
+    padding: 110px 0;
   }
   .hero-title{
-    color: #FC6701;
+    font-size: 60px ;
+    margin-bottom: 35px;
   }
-  
-  /* Estilos para tamaños de pantalla de escritorio */
-  @media (min-width: 1024px) {
-    .hero-section-services {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
+  .hero-description {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+}
 
-    }
-    .hero-section-gallery {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-collision {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-estimate {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-how-we-do-it {
-      height: 40vh;
-      padding: 110px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-AboutUs{
-      height: 40vh;
-      padding: 110px 0;
-    }
-    .hero-title {
-      font-size: 60px;
-      margin-bottom: 20px;
-    }
-    .hero-description {
-      font-size: 26px;
-      margin-bottom: 100px;
-    }
+/* Estilos comunes para tamaños de pantalla medianos (tabletas, etc.) */
+@media (max-width: 1023px) {
+  .hero-section {
+    margin-top: 20px;
+    padding: 100px 0;
+    height: auto;
+  }
+  .hero-title {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .hero-description {
+    font-size: 16px;
+    margin: 0 3rem 0;
+    margin-bottom: 20px;
+  }
+}
 
+/* Estilos comunes para tamaños de pantalla móviles */
+@media (min-width: 375px) and (max-width: 767px) {
+  .hero-section {
+    height: 38vh;
+    padding: 100px 0;
   }
-  
-  /* Estilos para tamaños de pantalla medianos (tabletas, etc.) */
-  @media (max-width: 1023px) {
-    .hero-section-services {
-      margin-top: 20px;
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas medianas */
-      height: 38vh;
-    }
-    .hero-section-gallery {
-      height: 38vh;
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-collision {
-      background-position: 50% 30%;
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-      height: 38vh;
-    }
-    .hero-section-estimate {
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-      height: 38vh;
-    }
-    .hero-section-how-we-do-it {
-      height: 38vh;
-      padding: 100px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-AboutUs{
-      height: 38vh;
-      padding: 100px 0;
-    }
-    .hero-title {
-      font-size: 50px;
-      margin-bottom: 15px;
-    }
-    .hero-description {
-      font-size: 20px;
-      padding: 10px;
-      margin-bottom: 25px;
-    }
+  .hero-title {
+    font-size: 34px;
+    margin-bottom: 10px;
   }
-  
-  /* Estilos para tamaños de pantalla móviles */
-  @media (max-width: 767px) {
-    .hero-section-services {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas móviles */
-    }
-    .hero-section-gallery {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-collision {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-estimate {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-how-we-do-it {
-      height: 35vh;
-      padding: 90px 0; /* Espaciado superior e inferior para pantallas de escritorio */
-    }
-    .hero-section-AboutUs{
-      height: 35vh;
-      padding: 90px 0;
-    }
-    .hero-title {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
-    .hero-description {
-      font-size: 16px;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    .hero-content{
-        margin-top: 30px;
-    }
-    .hero-section{
-        background-position: 70% 50%;
-    }
+  .hero-description {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 20px;
   }
+  .hero-content {
+    margin-top: 30px;
+  }
+  .hero-section {
+    background-position: 70% 50%;
+  }
+}
+
   
   /* Estilos para el botón (puedes personalizarlos más) */
   .hero-btn {
@@ -961,10 +934,12 @@ section{
     }
     
     .fab-container{
-        bottom: 5rem;
-        right: 5rem;
+        bottom: 2.5rem;
+        right: 3rem;
     }
-
+    .faq-2{
+      bottom: 10rem !important;
+    }
 
     .main-message{
         max-width: 100%;
@@ -1122,8 +1097,6 @@ section{
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowing-button-85 20s linear infinite;
@@ -2947,7 +2920,7 @@ section{
 
 
 .h2-blog {
-  color: #007bff; /* Azul vibrante */
+  color: #fc6701; /* Azul vibrante */
   font-size: 33px !important;
   font-family: 'Aldrich', sans-serif !important;
 }
@@ -2955,6 +2928,8 @@ section{
 .p-blog {
   font-size: 18px;
   line-height: 1.6;
+  color: black;
+  font-weight: 400;
 }
 
 .img-about {
@@ -2983,7 +2958,7 @@ section{
 .vision-content h3 {
   font-family: 'Aldrich', sans-serif !important;
   font-size: 30px;
-  color: #007bff;
+  color: #fc6701;
   font-size: 30px !important;
 }
 
@@ -3115,4 +3090,278 @@ section{
 /* ABOUT SECTION */
 
 
+
+
+/* How We Do ir Section */
+
+/* Subtitle styles */
+.subtitle{
+  position: relative;
+  margin-bottom: -5rem;
+}
+
+#timeline{
+  font-family: 'Nunito', sans-serif;
+}
+
+.step-image {
+  width: 100%;
+  overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+  border-radius: 5rem;
+}
+
+.step-image img {
+  width: 100%;
+  height: auto;
+  display: block; /* Evita el espacio adicional debajo de la imagen */
+}
+
+.timeline{
+  position: relative;
+  margin: 0 auto;
+  margin-top: -8rem;
+  padding: 40px 0;
+  width: 100vh;
+  box-sizing: border-box;
+}
+
+.timeline:before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #c5c5c5;
+}
+
+.timeline ul{
+  margin: 0;
+  padding: 0;
+
+}
+
+.timeline ul li{
+  list-style: none;
+  position: relative;
+  width:50%;
+  padding: 20px 40px;
+  box-shadow: border-box;
+}
+
+.timeline ul li:nth-child(odd){
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even){
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content{
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(252, 103, 1, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(252, 103, 1, .2);
+}
+
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgba(252, 103, 1, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(252, 103, 1, .2);
+}
+
+.timeline ul li h3{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 2.3rem;
+  padding-bottom: 1.3rem;
+  letter-spacing: 1.2px;
+  font-family: 'Aldrich', sans-serif;
+  color: rgba(252, 103, 1, 1);
+}
+
+.timeline ul li p{
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.timeline ul li .time h4{
+  margin: 0;
+  padding: 0;
+  font-size: 1.9rem;
+}
+
+.timeline ul li:nth-child(odd) .time{
+  position: absolute;
+  top: 12px;
+  right: -120px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(252, 103, 1, 1);
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(252, 103, 1, .3);
+}
+
+.timeline ul li:nth-child(even) .time{
+  position: absolute;
+  top: 12px;
+  left: -120px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgba(252, 103, 1, 1);
+  color: white;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgba(252, 103, 1, .3);
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+  .timeline {
+      width: 100%;
+  } 
+}
+
+@media (max-width: 767px){
+
+  .timeline {
+      width: 100% !important;
+      padding-bottom: 0; 
+  } 
+
+  .timeline:before{
+      left: 20px;
+  }
+
+  .timeline ul li:nth-child(odd){
+      width: 100%;
+      text-align: left;
+      padding: 50px;
+      padding-bottom: 50px;
+  }
+  .timeline ul li:nth-child(even){
+      width: 100%;
+      text-align: left;
+      padding: 50px;
+      padding-bottom: 50px;
+  }
+
+  .timeline li:nth-child(odd):before, 
+  .timeline li:nth-child(even):before{
+      top: -18px !important;
+      left: 16px !important;  
+  }
+
+  .timeline li:nth-child(odd) .time,
+  .timeline li:nth-child(even) .time{
+      top: -30px !important;
+      left: 50px !important;
+      max-width: 100px;
+      right: inherit !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .timeline ul li .step-image {
+      position: absolute;
+      top: 70px;
+      margin: 0;
+      padding: 8px 16px;
+      color: white;
+      border-radius: 5rem;
+  }
+  
+  .timeline ul li:nth-child(odd) .step-image {
+      right: -420px;
+  }
+  
+  .timeline ul li:nth-child(even) .step-image {
+      left: -420px;
+  }
+  
+  
+  .timeline ul li:nth-child(odd) {
+      position: relative;
+      margin-bottom: 20px; /* Ajusta el espacio entre los elementos según tus necesidades */
+  }
+  
+  .timeline ul li:nth-child(even) {
+      position: relative;
+      margin-bottom: 20px; /* Ajusta el espacio entre los elementos según tus necesidades */
+  }
+  
+  /* Ajustes para el Step 2 */
+  .timeline ul li:nth-child(2) {
+      margin-top: -20px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 4 */
+  .timeline ul li:nth-child(4) {
+      margin-top: 110px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 5 */
+  .timeline ul li:nth-child(5) {
+      margin-top: 110px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 6 */
+  .timeline ul li:nth-child(6) {
+      margin-top: 150px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 7 */
+  .timeline ul li:nth-child(7) {
+      margin-top: 190px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+  /* Ajustes para el Step 8 */
+  .timeline ul li:nth-child(8) {
+      margin-top: 100px; /* Ajusta el margen superior negativo según tus necesidades */
+  }
+}
+@media (min-width: 810px) {
+  .timeline ul li:nth-child(odd) .step-image {
+      right: -450px;
+  }
+  
+  .timeline ul li:nth-child(even) .step-image {
+      left: -450px;
+  }
+}
+@media (min-width: 910px) {
+  .timeline ul li:nth-child(odd) .step-image {
+      right: -520px;
+  }
+  
+  .timeline ul li:nth-child(even) .step-image {
+      left: -520px;
+  }
+}
+@media (max-width: 767px) {
+  
+  .timeline ul li:nth-child(odd) .step-image {
+      right: -120px;
+  }
+  
+  .timeline ul li:nth-child(even) .step-image {
+      left: -120px;
+  }
+}
+/* End how we do it */
 /*# sourceMappingURL=style.css.map */
