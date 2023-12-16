@@ -447,7 +447,12 @@ section{
     max-width: 1310px;
   }
   .offcanvas-body ul li{
-    padding: 0 0.5rem 0;
+    padding: 0 0.6rem 0;
+  }
+
+  /* Esto es para menus muy grandes automative services*/
+  .dropdown-menu-large{
+    width: 280px !important;
   }
 }
 .navbar-brand{ /* esto es la imagen del header */
