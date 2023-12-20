@@ -2318,6 +2318,11 @@ section{
     height: 70vh !important;
   }
 }
+@media screen and (min-width: 1440px){
+  .price-table{
+    height: 50vh !important;
+  }
+}
 .p-discouts{
   font-size: 18px;
   color: white;
