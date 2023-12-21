@@ -2349,7 +2349,8 @@ section{
 
 .price .price-table .price-head{
   padding: 25px 40px;
-  background: linear-gradient(135deg, rgba(20, 67, 168, 0.859) 0%, rgba(169, 76, 14, 0.696) 100%);
+    background-image: linear-gradient(135deg, rgba(20, 67, 168, 0.859) 0%, rgba(169, 76, 14, 0.696) 100%);
+    /* background-image: linear-gradient(135deg, rgba(20, 67, 168, 0.859) 0%, rgba(169, 76, 14, 0.696) 100%), url('../images/realImages/fondoShop.jpg'); */
   color: white;
   text-align: center;
 }
