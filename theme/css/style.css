@@ -1921,15 +1921,15 @@ section{
 }
 .container-services h3 {
   font-family: 'Aldrich', sans-serif;
-  font-size: 2rem;
-  color: #fc6701;
+  font-size: 2rem !important;
   position: relative;
 }
 .container-services h1{
   font-family: 'Aldrich', sans-serif;
-  font-size: 4rem;
+  font-size: 3rem !important;
   position: relative;
   font-weight: 500;
+  margin-top: 1rem !important;
 }
 @media (max-width: 768px) {
   .container-services h1{
@@ -2051,7 +2051,56 @@ section{
     margin-top: 60px;
   }
 }
-/* Services section home start end */
+/* Services section home end */
+
+/* list 2 columnas */
+.collision-image-bg{
+  background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url(../images/gallery/ejemplo4.jpg) center no-repeat !important;
+}
+
+.two-line-list li {
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 100px;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .content-list-collision{
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-list-collision{
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 996px) {
+  .content-list-collision{
+    margin-top: calc(20% - 15px);
+  }
+  .two-line-list li {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 996px) and  (max-width: 1024px) {
+  .content-list-collision{
+    margin-top: calc(20% - 65px) ;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .content-list-collision{
+    margin-top: calc(20% - 130px); /* this one */
+  }
+}
+@media (min-width: 1441px) {
+  .content-list-collision{
+    margin-top: calc(20% - 140px);
+  }
+}
 
 @media (max-width: 768px) {
   .mobile-section-flex{
@@ -2061,6 +2110,34 @@ section{
   }
   
 }
+
+.ul-div-columns{
+  padding: 0;
+  margin: 0;
+  gap: 3rem;
+}
+.ul-div-columns li{
+  white-space: nowrap; /* Evita el salto de línea */
+  font-family: 'Aldrich', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+.div-columns{
+  flex: 0 0 auto;
+  width: 35%;
+}
+@media (max-width:768px) {
+  .div-columns{
+    flex: 0 0 auto;
+    width: 45%;
+  }
+  .ul-div-columns li{
+    white-space: nowrap; /* Evita el salto de línea */
+    font-size: 18px;
+  }
+}
+
 .section-FAQ{
   width: 100%;
   padding: 10rem;
@@ -2821,6 +2898,10 @@ section{
 
 .h1-carousell{
   font-size: 40px !important;
+}
+.h1-carousell-collision{
+  font-family: 'Aldrich', sans-serif !important;
+  font-size: 32px !important;
 }
 
 
