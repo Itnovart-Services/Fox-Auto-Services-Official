@@ -1091,6 +1091,32 @@ section{
 
 
 /* CSS */
+.btn-85-cta{
+  font-size: 16px;
+  border-radius: 8px !important;
+}
+.btn-85-cta:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .btn-85-cta{
+    font-size: 15px;
+    border-radius: 8px;
+  }
+}
+@media (max-width: 992px) {
+  .btn-85-cta{
+    font-size: 15px;
+    border-radius: 8px;
+  }
+}
+.btn-85-cta:before {
+  border-radius: 8px !important;
+}
+.btn-85-cta:after {
+  border-radius: 8px !important;
+}
+
 .button-85 {
   padding: 0.6em 2em;
   border: none;
@@ -2054,6 +2080,11 @@ section{
 /* Services section home end */
 
 /* list 2 columnas */
+.CTA-index-image-bg{
+  background: linear-gradient(135deg, rgba(55, 57, 59, 0.9) 0%, rgba(27, 28, 28, 0.8) 100%), url(../images/realImages/Vission.png) !important;
+  background-size: cover !important;
+  background-position: 50% 40% !important;
+}
 .collision-image-bg{
   background: linear-gradient(135deg, rgba(34, 62, 122, 0.9) 0%, rgba(35, 57, 82, 0.8) 100%), url(../images/gallery/ejemplo4.jpg) center no-repeat !important;
 }
@@ -3115,6 +3146,13 @@ section{
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 10px; /* Ajustado el margen inferior */
+}
+.vision-content-index {
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Ajustado el margen inferior */
+  text-align: center;
+  align-items: center;
 }
 
 .mission-content h3,
