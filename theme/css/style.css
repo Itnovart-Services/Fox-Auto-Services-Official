@@ -430,6 +430,7 @@ section{
 #navbar {
   background-color: linear-gradient(135deg, rgb(34, 62, 122, 0) 0%, rgb(34, 62, 122, 0) 100%); /* Fondo transparente con opacidad 0.7 */
   transition: background-color 0.3s; /* Transición suave al cambiar la opacidad */
+  position: fixed;
 }
 @media (min-width: 1440px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
