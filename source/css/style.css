@@ -2504,7 +2504,8 @@ section{
 /* Responsive styles for .price-table */
 @media (max-width: 768px) {
   .price-table {
-    height: 43vh;
+    height: 65vh;
+    max-height: 65vh;
   }
 }
 
