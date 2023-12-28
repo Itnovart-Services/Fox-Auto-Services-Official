@@ -738,6 +738,11 @@ section{
   background-position: 50% 100%;
   background-size: cover;
 }
+.hero-section-certi {
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/realImages/HowWeDoIt.png');
+  background-position: 50% 100%;
+  background-size: cover;
+}
 
 .hero-section-collision {
   background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.518) 0%, rgba(35, 57, 82, 0.659) 100%), url('../images/collisionRepairHero.jpg');
@@ -837,6 +842,9 @@ section{
   }
   .hero-section {
     background-position: 70% 50%;
+  }
+  .hero-section-collision {
+    margin-bottom: 15px;
   }
 }
 
@@ -2140,7 +2148,19 @@ section{
     flex-direction: column;
     align-items: center;
   }
-  
+  .ul-div-columns li{
+    white-space: nowrap; /* Evita el salto de línea */
+    font-size: 15px !important;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .ul-div-columns{
+    padding-bottom: 10px !important;
+  }
+  .cotainer-colli-mb{
+    margin-bottom: 10px;
+  }
 }
 
 .ul-div-columns{
@@ -3070,12 +3090,20 @@ section{
   color: #fff;
 }
 .sec-scale-card{
-  transition: transform 0.5s ease;
+  transition: 1s !important;
   cursor: pointer;
 }
 
 .sec-scale-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.1) !important;
+}
+.sec-scale-card-home{
+  transition: 0.3s !important;
+  cursor: pointer;
+}
+
+.sec-scale-card-home:hover {
+  transform: scale(1.1) !important;
 }
 /* Social Media Home END */
 
@@ -3120,6 +3148,56 @@ section{
   font-size: 33px !important;
   font-family: 'Aldrich', sans-serif !important;
 }
+.h2-certi{
+  color: black; /* Azul vibrante */
+  font-size: 33px !important;
+  font-family: 'Aldrich', sans-serif !important;
+}
+.h2-certi-span{
+  color: #FC6701; /* Azul vibrante */
+  font-size: 33px !important;
+  font-family: 'Aldrich', sans-serif !important;
+}
+.h3-certi{
+  font-weight: 600;
+}
+.container-certi-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  text-align: center;
+  background: #f4f5ff;
+}
+.section-cert-cards{
+  margin-top: -40px !important;
+}
+.card-img-top{
+  max-width: 632px;
+  height: 250px;
+}
+.card-title{
+  font-size: 20px;
+}
+
+.div-sec-repair{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 3rem 0;
+}
+.card-certi{
+  border-radius: 8px;
+  transition: 1s !important;
+}
+.card-certi:hover{
+  scale: 1.1;
+}
+.card-img-top-certi{
+  max-width: 632px;
+  height: 250px;
+  padding: 2rem;
+}
 
 .p-blog {
   font-size: 18px;
@@ -3132,6 +3210,14 @@ section{
   border-radius: 15px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.img-about-certi{
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 480px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -3580,7 +3666,7 @@ section{
 
 #showNavbarButton {
   position: fixed;
-  bottom: 95%;
+  bottom: 94%;
   left: 96%;
   transform: translate(-50%, 50%);
   display: none;
@@ -3593,6 +3679,20 @@ section{
   justify-content: flex-end; /* Alinear el contenido al final del botón */
   align-items: center; /* Centrar verticalmente el contenido */
   border-radius: 18px;
+}
+@media (max-width: 768px){
+  #showNavbarButton{
+    position: fixed;
+    bottom: 94%;
+    left: 90% !important;
+  }
+}
+@media (max-width: 992px){
+  #showNavbarButton{
+    position: fixed;
+    bottom: 94%;
+    left: 94%;
+  }
 }
 
 #showNavbarButton > span {
