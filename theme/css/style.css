@@ -602,6 +602,16 @@ section{
   }
 }
 
+/* Video About us */
+ /* Style the video: 100% width and height to cover the entire window */
+
+ #myVideo {
+  width: auto;
+  height: 720px;
+}
+
+/* Video About us */
+
 @media screen and (min-width: 1500px){
   .content-hero-home{
     margin-bottom: 10%;
@@ -739,8 +749,8 @@ section{
   background-size: cover;
 }
 .hero-section-certi {
-  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/realImages/HowWeDoIt.png');
-  background-position: 50% 100%;
+  background-image: linear-gradient(135deg, rgba(34, 62, 122, 0.417) 0%, rgba(35, 57, 82, 0.507) 100%), url('../images/realImages/Mission.png');
+  background-position: 50% 70%;
   background-size: cover;
 }
 
@@ -2856,6 +2866,10 @@ section{
   flex-grow: 1; /* Toma el espacio disponible */
   max-width: calc(50% - 1rem); /* Ajusta el ancho máximo al 50% y resta el espacio entre contenedores */
 }
+.sec-insta-about-video{
+  flex-grow: 1; /* Toma el espacio disponible */
+  max-width: calc(50% - 1rem); 
+}
 
 
 @media (min-width: 768px) {
@@ -2877,6 +2891,22 @@ section{
   .section-insta-info {
     flex-grow: 1; /* Toma el espacio disponible */
     max-width: calc(90% - 1rem); /* Ajusta el ancho máximo al 50% y resta el espacio entre contenedores */
+  }
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .sec-insta-about-video{
+    flex-grow: 1; /* Toma el espacio disponible */
+    max-width: calc(99% - 1rem); 
+  }
+  #myVideo{
+    width: 95%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .sec-insta-about-video{
+    flex-grow: 1; /* Toma el espacio disponible */
+    max-width: calc(75% - 1rem); 
   }
 }
 
