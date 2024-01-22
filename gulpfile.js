@@ -100,15 +100,6 @@ gulp.task("others3:build", function () {
     });
 });
 
-gulp.task("others4:build", function () {
-  console.log("Copying blogPage files...");
-  return gulp.src(path.src.others4)
-    .pipe(gulp.dest(path.build.dirDev + "blogPage/")) // Cambiado
-    .on('end', function() {
-      console.log("BlogPage files copied successfully!");
-    });
-});
-
 
 // CSS
 gulp.task("css:build", function () {
@@ -223,7 +214,7 @@ gulp.task("watch:build", function () {
   gulp.watch(path.src.others, gulp.series("others:build")); // Agregado
   gulp.watch(path.src.others2, gulp.series("others2:build")); // Agregado
   gulp.watch(path.src.others3, gulp.series("others3:build")); // Agregado
-  gulp.watch(path.src.others3, gulp.series("others4:build")); // Agregado
+  gulp.watch(path.src.others4, gulp.series("others4:build")); // Agregado
 });
 
 
