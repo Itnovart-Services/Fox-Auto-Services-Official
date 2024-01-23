@@ -320,8 +320,8 @@ section{
 .loader-div{
     width: 100vw;
     height: 100vh;
-    /* background: url('../images/logo.png') center no-repeat; */
-    background: url('../images/season/christmas/logoCrhistmas.png') center no-repeat;
+    background: url('../images/logo.png') center no-repeat;
+    /* background: url('../images/season/christmas/logoCrhistmas.png') center no-repeat; */
     background-size: contain; 
     animation: scaleAndFade 2.3s infinite;
 }
@@ -2017,7 +2017,8 @@ section{
   padding-bottom: 20px;
   text-align: center;
   padding-top: 30px;
-  background: url('../images/season/christmas/bgChristmas.png');
+  /* Christmas */
+  /* background: url('../images/season/christmas/bgChristmas.png'); */
   background-size: cover;
   background-position: 50% 50%;
 }
