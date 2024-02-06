@@ -1899,8 +1899,8 @@ section{
   background-color: black;
 }
 .a-about{
-  color: white;
-  text-decoration: none;
+  color: white !important;
+  text-decoration: none !important;
   list-style: none;
 }
 .box img{
@@ -3124,7 +3124,8 @@ section{
 }
 
 .h1-carousell{
-  font-size: 40px !important;
+  font-size: 38px !important;
+  font-family: 'Aldrich', sans-serif;
 }
 .h1-carousell-collision{
   font-family: 'Aldrich', sans-serif !important;
