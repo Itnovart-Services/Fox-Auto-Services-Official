@@ -313,8 +313,9 @@ section{
 .loader-div{
     width: 100vw;
     height: 100vh;
-    background: url('../images/logo.png') center no-repeat;
+    /* background: url('../images/logo.png') center no-repeat; */
     /* background: url('../images/season/christmas/logoCrhistmas.png') center no-repeat; */
+    background: url('../images/season/valentines/loadValentines.png') center no-repeat;
     background-size: contain;
     -webkit-animation: scaleAndFade 2.3s infinite; 
        -moz-animation: scaleAndFade 2.3s infinite; 
@@ -2035,6 +2036,7 @@ section{
   padding-top: 30px;
   /* Christmas */
   /* background: url('../images/season/christmas/bgChristmas.png'); */
+  background: rgba(255, 255, 255, 0) url('../images/season/valentines/bgValentines.png');
   background-size: cover;
   background-position: 50% 50%;
 }
